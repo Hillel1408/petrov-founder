@@ -1,0 +1,30 @@
+.container {
+  max-width: 1532px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.text {
+  font-size: 16px;
+  line-height: 175%;
+  color: #f2f7fc;
+}
+.btn {
+  border: 1px solid #f2f7fc;
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  align-items: center;
+}
+.small-text {
+  font-size: 14px;
+  line-height: 171%;
+  color: rgba(242, 247, 252, 0.8);
+}
