@@ -1,2 +1,120 @@
 .footer {
+  padding: 74px 0 40px 0;
+  background-image: url("../img/bg-2.png");
+  background-size: cover;
+  &__form {
+    background: rgba(33, 39, 79, 0.8);
+    border-radius: 10px;
+    width: 605px;
+    padding: 42px;
+    margin-bottom: 94px;
+    & > h2 {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 158%;
+      text-transform: uppercase;
+      color: #f2f7fc;
+      margin-bottom: 12px;
+    }
+    & > form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      & > input {
+        background-color: transparent;
+        height: 36px;
+        border-bottom: 1px solid white;
+        font-size: 16px;
+        line-height: 162%;
+        color: #f2f7fc;
+        &::placeholder {
+          font-size: 16px;
+          line-height: 162%;
+          color: #f2f7fc;
+        }
+      }
+      & > button {
+        margin-top: 20px;
+        align-self: flex-start;
+      }
+    }
+
+    & > p {
+      margin-bottom: 36px;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    & > div {
+      &:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & > a {
+          &::before {
+            color: white;
+            font-size: 40px;
+          }
+        }
+        & > p {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      &:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        & > a {
+          font-size: 30px;
+          line-height: 137%;
+          color: #fff;
+        }
+        & > ul {
+          display: flex;
+          gap: 20px;
+          & > li {
+            &:not(:nth-child(2)) {
+              & > a {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                &::before {
+                  color: #21274f;
+                }
+              }
+            }
+            &:nth-child(1) {
+              & > a {
+                &::before {
+                  font-size: 20px;
+                }
+              }
+            }
+            &:nth-child(2) {
+              & > a {
+                &::before {
+                  font-size: 40px;
+                  color: white;
+                }
+              }
+            }
+            &:nth-child(4) {
+              & > a {
+                &::before {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
