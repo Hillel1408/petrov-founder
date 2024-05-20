@@ -1,0 +1,49 @@
+.stages-of-work {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #f2f7fc;
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+  & > div {
+    &:nth-child(1) {
+      padding-left: calc(100vw / 2 - 595px);
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+      & > button {
+        align-self: flex-start;
+        background: #21274f;
+      }
+      & > ul {
+        display: flex;
+        flex-direction: column;
+        & > li {
+          padding: 28px 0;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 108%;
+          text-transform: uppercase;
+          color: #21274f;
+          border-top: 1px solid #9ea3b8;
+          display: grid;
+          grid-template-columns: 0.5fr 1fr;
+          & > span {
+            &:nth-child(1) {
+              font-weight: 600;
+              font-size: 28px;
+            }
+          }
+          &:last-child {
+            border-bottom: 1px solid #9ea3b8;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+}
