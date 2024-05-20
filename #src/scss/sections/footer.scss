@@ -72,48 +72,6 @@
           line-height: 137%;
           color: #fff;
         }
-        & > ul {
-          display: flex;
-          gap: 20px;
-          & > li {
-            &:not(:nth-child(2)) {
-              & > a {
-                width: 40px;
-                height: 40px;
-                border-radius: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: white;
-                &::before {
-                  color: #21274f;
-                }
-              }
-            }
-            &:nth-child(1) {
-              & > a {
-                &::before {
-                  font-size: 20px;
-                }
-              }
-            }
-            &:nth-child(2) {
-              & > a {
-                &::before {
-                  font-size: 40px;
-                  color: white;
-                }
-              }
-            }
-            &:nth-child(4) {
-              & > a {
-                &::before {
-                  font-size: 15px;
-                }
-              }
-            }
-          }
-        }
       }
     }
   }
