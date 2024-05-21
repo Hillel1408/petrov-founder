@@ -1,10 +1,17 @@
 .price {
   padding: 100px 0;
   background-color: #1e264d;
+  @media (max-width: 576px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   & > div {
     & > h2 {
       color: #f2f7fc;
       margin-left: 160px;
+      @media (max-width: 1400px) {
+        margin-left: 0;
+      }
     }
   }
   &__list {
@@ -16,17 +23,36 @@
       display: grid;
       grid-template-columns: 530px 1fr;
       gap: 231px;
+      &:nth-child(1) {
+        padding-top: 30px;
+      }
+      @media (max-width: 1400px) {
+        gap: 40px;
+      }
+      @media (max-width: 1200px) {
+        grid-template-columns: 430px 1fr;
+      }
+      @media (max-width: 992px) {
+        grid-template-columns: 1fr;
+      }
       &:not(:last-child) {
         border-bottom: 1px solid #777b9a;
       }
       & > img {
         height: 346px;
         object-fit: cover;
+        width: 100%;
+        @media (max-width: 992px) {
+          height: auto;
+        }
       }
       & > div {
         display: flex;
         justify-content: space-between;
         max-width: 627px;
+        @media (max-width: 1400px) {
+          gap: 20px;
+        }
         & > div {
           &:first-child {
             display: flex;
@@ -56,6 +82,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-width: 90px;
             & > span {
               &:nth-child(2) {
                 font-weight: 500;
