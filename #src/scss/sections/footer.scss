@@ -8,6 +8,12 @@
     width: 605px;
     padding: 42px;
     margin-bottom: 94px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    @media (max-width: 576px) {
+      padding: 22px;
+    }
     & > h2 {
       font-weight: 500;
       font-size: 36px;
@@ -15,6 +21,9 @@
       text-transform: uppercase;
       color: #f2f7fc;
       margin-bottom: 12px;
+      @media (max-width: 576px) {
+        font-size: 28px;
+      }
     }
     & > form {
       display: flex;
@@ -47,6 +56,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
     & > div {
       &:nth-child(1) {
         display: flex;
