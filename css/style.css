@@ -1286,6 +1286,9 @@ html {
   height: 40px;
   background-color: transparent;
 }
+.our-houses__slider-button-prev::before, .our-houses__slider-button-next::before {
+  color: #21274f;
+}
 .our-houses__slider-button-prev {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -1448,6 +1451,9 @@ html {
   width: 64px;
   height: 40px;
   background-color: transparent;
+}
+.reviews__slider-button-prev::before, .reviews__slider-button-next::before {
+  color: #21274f;
 }
 .reviews__slider-button-prev {
   -webkit-transform: rotate(180deg);
