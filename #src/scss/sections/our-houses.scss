@@ -1,0 +1,60 @@
+.our-houses {
+  padding-bottom: 100px;
+  background: #f2f7fc;
+  & > div {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > div {
+      gap: 20px;
+      display: flex;
+    }
+  }
+  &__slider {
+    overflow: hidden;
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    &-button-prev,
+    &-button-next {
+      border: 1px solid #21274f;
+      border-radius: 30px;
+      width: 64px;
+      height: 40px;
+      background-color: transparent;
+    }
+    &-button-prev {
+      transform: rotate(180deg);
+    }
+  }
+  &__swiper-slide {
+    display: grid;
+    width: 1072px;
+    gap: 32px;
+    & > img {
+      height: 336px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+    &:nth-child(n) {
+      grid-template-columns: 336px 336px 336px;
+      & > img {
+        &:nth-child(1) {
+          grid-column: span 1;
+        }
+        &:nth-child(2) {
+          grid-column: span 2;
+        }
+        &:nth-child(3) {
+          grid-column: span 2;
+        }
+        &:nth-child(4) {
+          grid-column: span 1;
+        }
+      }
+    }
+  }
+}
