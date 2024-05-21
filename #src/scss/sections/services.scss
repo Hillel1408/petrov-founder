@@ -2,6 +2,10 @@
   padding-top: 100px;
   background: #f2f7fc;
   padding-bottom: 100px;
+  @media (max-width: 576px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   & > div {
     & > ul {
       margin-top: 70px;
@@ -9,6 +13,17 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 42px;
       row-gap: 100px;
+      @media (max-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 42px;
+      }
+      @media (max-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+      }
       & > li {
         display: flex;
         flex-direction: column;
