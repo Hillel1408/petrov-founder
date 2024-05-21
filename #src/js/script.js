@@ -2,7 +2,24 @@ const ourHousesSlider = new Swiper(".our-houses__slider", {
   slidesPerView: "auto",
   spaceBetween: 16,
   navigation: {
-    nextEl: ".slider__button-next",
-    prevEl: ".slider__button-prev",
+    nextEl: ".our-houses__slider-button-next",
+    prevEl: ".our-houses__slider-button-prev",
   },
+});
+const reviewsSlider = new Swiper(".reviews__slider", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".reviews__slider-button-next",
+    prevEl: ".reviews__slider-button-prev",
+  },
+});
+const faqItems = document.querySelectorAll(".faq__spoiler li");
+faqItems.forEach((item) => {
+  item.addEventListener("click", function () {
+    faqItems.forEach((elem) => {
+      elem.classList.remove("active");
+    });
+    item.classList.toggle("active");
+  });
 });

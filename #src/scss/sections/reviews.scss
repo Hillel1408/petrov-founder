@@ -1,0 +1,83 @@
+.reviews {
+  background: #ebf0f6;
+  padding-top: 84px;
+  padding-bottom: 100px;
+  & > div:first-child {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > div {
+      gap: 20px;
+      display: flex;
+    }
+  }
+  &__slider {
+    overflow: hidden;
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    &-button-prev,
+    &-button-next {
+      border: 1px solid #21274f;
+      border-radius: 30px;
+      width: 64px;
+      height: 40px;
+      background-color: transparent;
+    }
+    &-button-prev {
+      transform: rotate(180deg);
+    }
+  }
+  &__swiper-slide {
+    width: 704px;
+    border-radius: 10px;
+    background: #f2f7fc;
+    padding: 50px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      & > p {
+        font-size: 14px;
+        line-height: 143%;
+        color: #777b9a;
+      }
+      & > ul {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        & > li {
+          &::before {
+            color: #21274f;
+            font-size: 19px;
+          }
+        }
+      }
+    }
+    & > p {
+      color: #21274f;
+    }
+    & > button {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 15px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 143%;
+      text-transform: uppercase;
+      color: #21274f;
+      align-items: center;
+      background-color: transparent;
+      &::before {
+        color: #21274f;
+      }
+    }
+  }
+}
