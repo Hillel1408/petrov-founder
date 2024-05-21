@@ -1,6 +1,9 @@
 .images {
   background-color: #f2f7fc;
   padding-bottom: 80px;
+  @media (max-width: 576px) {
+    padding-bottom: 40px;
+  }
   & > div {
     display: flex;
     gap: 20px;
@@ -8,5 +11,16 @@
     overflow: auto;
     padding-bottom: 20px;
     justify-content: center;
+    @media (max-width: 576px) {
+      padding-bottom: 10px;
+    }
+    & > img {
+      @media (max-width: 768px) {
+        height: 200px;
+      }
+      @media (max-width: 576px) {
+        height: 150px;
+      }
+    }
   }
 }
