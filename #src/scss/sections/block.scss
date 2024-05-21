@@ -1,11 +1,16 @@
 .block {
-  padding-bottom: 100px;
   background: #f2f7fc;
   padding-top: 100px;
+  @media (max-width: 576px) {
+    padding-top: 50px;
+  }
   & > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
     & > div {
       border: 1px solid #21274f;
       border-radius: 10px;
@@ -15,11 +20,17 @@
       flex-direction: column;
       gap: 7px;
       align-items: flex-start;
+      @media (max-width: 992px) {
+        padding: 20px;
+      }
       & > h2 {
         font-weight: 500;
         font-size: 36px;
         line-height: 180%;
         text-transform: uppercase;
+        @media (max-width: 992px) {
+          font-size: 28px;
+        }
       }
       &:nth-child(1) {
         & > h2 {

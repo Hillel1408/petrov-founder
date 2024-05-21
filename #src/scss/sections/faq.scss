@@ -1,15 +1,32 @@
 .faq {
   padding-bottom: 100px;
+  padding-top: 100px;
   background: #f2f7fc;
+  @media (max-width: 576px) {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
   & > div {
     padding-left: calc(100vw / 2 - 595px);
+    @media (max-width: 1400px) {
+      padding-left: 20px;
+    }
     & > h2 {
       margin-bottom: 55px;
+      @media (max-width: 576px) {
+        margin-bottom: 30px;
+      }
     }
     & > ul {
       & > li {
         border-top: 1px solid #757a94;
         padding: 27px 0 27px 38px;
+        @media (max-width: 1400px) {
+          padding-right: 20px;
+        }
+        @media (max-width: 768px) {
+          padding: 20px;
+        }
         cursor: pointer;
         &.active {
           & > p {
@@ -30,9 +47,14 @@
           justify-content: space-between;
           max-width: 1160px;
           align-items: center;
+          gap: 20px;
+          @media (max-width: 768px) {
+            font-size: 24px;
+          }
           &::before {
             color: #21274f;
             font-size: 40px;
+            transition: 0.3s;
           }
         }
         & > div {
