@@ -755,6 +755,9 @@ html {
 .price__list-item:nth-child(1) {
   padding-top: 30px;
 }
+.price__list-item:last-child {
+  padding-bottom: 0;
+}
 @media (max-width: 1400px) {
   .price__list-item {
     gap: 40px;
