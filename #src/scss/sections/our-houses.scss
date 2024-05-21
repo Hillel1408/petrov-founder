@@ -31,6 +31,9 @@
       width: 64px;
       height: 40px;
       background-color: transparent;
+      &::before {
+        color: #21274f;
+      }
     }
     &-button-prev {
       transform: rotate(180deg);
