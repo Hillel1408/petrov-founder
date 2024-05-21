@@ -1,6 +1,6 @@
 const ourHousesSlider = new Swiper(".our-houses__slider", {
   slidesPerView: "auto",
-  spaceBetween: 16,
+  spaceBetween: 32,
   navigation: {
     nextEl: ".our-houses__slider-button-next",
     prevEl: ".our-houses__slider-button-prev",
@@ -8,7 +8,7 @@ const ourHousesSlider = new Swiper(".our-houses__slider", {
 });
 const reviewsSlider = new Swiper(".reviews__slider", {
   slidesPerView: "auto",
-  spaceBetween: 16,
+  spaceBetween: 20,
   navigation: {
     nextEl: ".reviews__slider-button-next",
     prevEl: ".reviews__slider-button-prev",

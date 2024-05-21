@@ -1,6 +1,9 @@
 .our-houses {
   padding-bottom: 100px;
   background: #f2f7fc;
+  @media (max-width: 576px) {
+    padding-bottom: 50px;
+  }
   & > div:first-child {
     margin-bottom: 50px;
     display: flex;
@@ -16,6 +19,10 @@
     &-wrapper {
       display: flex;
       justify-content: center;
+      @media (max-width: 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
     &-button-prev,
     &-button-next {
@@ -33,14 +40,52 @@
     display: grid;
     width: 1072px;
     gap: 32px;
+    @media (max-width: 1400px) {
+      width: 940px;
+      gap: 20px;
+    }
+    @media (max-width: 1200px) {
+      width: 850px;
+    }
+    @media (max-width: 768px) {
+      width: 730px;
+    }
+    @media (max-width: 576px) {
+      gap: 16px;
+      width: 632px;
+    }
     & > img {
       height: 336px;
       width: 100%;
       object-fit: cover;
       border-radius: 16px;
+      @media (max-width: 1400px) {
+        height: 300px;
+      }
+      @media (max-width: 1200px) {
+        height: 250px;
+      }
+      @media (max-width: 768px) {
+        height: 230px;
+      }
+      @media (max-width: 576px) {
+        height: 200px;
+      }
     }
     &:nth-child(n) {
       grid-template-columns: 336px 336px 336px;
+      @media (max-width: 1400px) {
+        grid-template-columns: 300px 300px 300px;
+      }
+      @media (max-width: 1200px) {
+        grid-template-columns: 270px 270px 270px;
+      }
+      @media (max-width: 768px) {
+        grid-template-columns: 230px 230px 230px;
+      }
+      @media (max-width: 576px) {
+        grid-template-columns: 200px 200px 200px;
+      }
       & > img {
         &:nth-child(1) {
           grid-column: span 1;
