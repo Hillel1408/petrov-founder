@@ -605,6 +605,7 @@ html {
   .footer__grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 .footer__grid > div:nth-child(1) {
@@ -618,6 +619,13 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .footer__grid > div:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 .footer__grid > div:nth-child(1) > a::before {
   color: white;
