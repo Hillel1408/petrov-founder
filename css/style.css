@@ -231,9 +231,9 @@ h6 {
   text-transform: uppercase;
   color: #fff;
   background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -962,7 +962,7 @@ html {
     margin-bottom: 30px;
   }
 }
-.advantages > div > button {
+.advantages > div > a {
   background: #21274f;
 }
 .advantages > div > ul {
@@ -1194,7 +1194,7 @@ html {
 .block > div > div:nth-child(2) > h2 {
   color: #f2f7fc;
 }
-.block > div > div:nth-child(2) > button {
+.block > div > div:nth-child(2) > a {
   margin-top: 20px;
 }
 
