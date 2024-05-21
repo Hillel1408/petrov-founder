@@ -58,12 +58,16 @@
     gap: 20px;
     @media (max-width: 576px) {
       grid-template-columns: 1fr;
+      gap: 40px;
     }
     & > div {
       &:nth-child(1) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media (max-width: 576px) {
+          order: 1;
+        }
         & > a {
           &::before {
             color: white;
